@@ -5,7 +5,7 @@
 #
 title: Faiza
 email: fj.iqbal90@gmail.com
-description: A blog about android development.
+description: A blog about android and stuff.
 url: # the base hostname & protocol for your site
 
 
@@ -34,12 +34,12 @@ kramdown:
 #
 owner:
   name: Faiza
-  avatar: leonids-logo.png
+  avatar: fizzys-logo.png
   job: "Android Developer"
-  bio: "A blog about android development."
+  bio: "A blog about android and stuff"
   email: fj.iqbal90@gmail.com
   disqus-shortname:
-  twitter: #username
+  twitter: "fizzyisdizzy"
   facebook: #username
   google:
     plus: #username
@@ -50,7 +50,7 @@ owner:
   bing-verify:
   github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: "faiza-iqbal-10769b38"
   xing: #username
   instagram: #username
   lastfm: #username
