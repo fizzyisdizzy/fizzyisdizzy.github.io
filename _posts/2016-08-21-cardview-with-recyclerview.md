@@ -8,7 +8,7 @@ comments: true
 How to create a CardView with a RecyclerView
 
 <!--more-->
-One of the most common UI widgets that have increased in popularity on Android and are the art of Material Design are CardViews. CardViews can be put to good use when combined with RecyclerViews. Despite ListViews being CardViews extends the FrameLayout and is supported on Android 2.X. In this post I will demonstrate how you can create one for your app. 
+One of the most common UI widgets that have increased in popularity on Android and are the art of Material Design are CardViews. CardViews can be put to good use when combined with RecyclerViews. CardViews extends the FrameLayout and is supported on Android 2.X. In this post I will demonstrate how you can create one for your app. 
 
 Let’s begin! Start by creating a new android project with an empty activity. 
 
