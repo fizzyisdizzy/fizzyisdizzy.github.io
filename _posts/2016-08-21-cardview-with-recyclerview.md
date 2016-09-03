@@ -22,7 +22,7 @@ dependencies {
 }
 {% endhighlight %}
 
-**NB**: Don’t forget to hit that sync now button!
+**NB:** Don’t forget to hit that sync now button!
 Add the following widget to your activity_main.xml layout:
 
 {% highlight xml %}
@@ -98,6 +98,8 @@ public CardAdapter() {
 }
 {% endhighlight %}
 
+**NB:** make sure you have added your images the imagies you will be using to the drawable folder (app -> res -> drawable)
+
 This is to count the number of places in the list.
 {% highlight java %}
 public int getItemCount() {
@@ -124,4 +126,9 @@ public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
     return viewHolder;
 }
 {% endhighlight %}
+
+If you have followed the tutorial and run your app, you should see something similar to below:
+
+
+![image-title-here](/img/cardview.png){:class="img-responsive"}
 
