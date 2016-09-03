@@ -50,13 +50,79 @@ CardViews can be used to display anything, in this case I will be using it to di
 
 Create a new XML layout file for your CardView as follows:
 
-(attach CardView.xml layout)
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginBottom="10dp"
+    card_view:cardElevation="2dp"
+    android:foreground="?android:attr/selectableItemBackground">
+    <LinearLayout
+        android:id="@+id/place_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:transitionName="tNameHolder">
+        <TextView
+            android:id="@+id/place_name"
+            android:transitionName="placeName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:alpha="0.8"
+            android:textColor="#6A6565"
+            android:textSize="24sp"
+            android:layout_marginTop="210dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/place_image"
+            android:transitionName="image"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+</android.support.v7.widget.CardView>
+{% endhighlight %}
 
 In order to show content on a card, you will need to create a data model for the content you want to display.
 
 Create a java class called Places.java:
 
-(attach Places.java file)
+{% highlight java %}
+public class Places {
+    private String mName;
+    private int mThumbnail;
+
+    public String getName() {
+        return mName;
+    }
+
+    public void setName(String name) {
+        this.mName = name;
+    }
+
+    public int getThumbnail() {
+        return mThumbnail;
+    }
+
+    public void setThumbnail(int thumbnail) {
+        this.mThumbnail = thumbnail;
+    }
+}
+{% endhighlight %}
 
 Also, create another class called CardAdapter.java. We will be using the view holder design pattern for the adapter. The adapter is a representative of what we want to display on the UI of our app. If we want to display places on our CardView, we need this adapter to do so. This adapter must extend the class RecyclerView.Adapter to implement the ViewHolder pattern.
 
@@ -128,7 +194,6 @@ public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 {% endhighlight %}
 
 If you have followed the tutorial and run your app, you should see something similar to below:
-
 
 ![image-title-here](/img/cardview.png){:class="img-responsive"}
 
