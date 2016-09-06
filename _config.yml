@@ -27,6 +27,8 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
+gems: [jemoji]
+
 #
 ###################################
 # Site Owner configuration
@@ -48,9 +50,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: "fizzyisdizzy"
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: "faiza-iqbal-10769b38"
+  linkedin: "fjiqbal"
   xing: #username
   instagram: #username
   lastfm: #username
