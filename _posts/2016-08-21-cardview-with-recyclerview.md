@@ -4,6 +4,8 @@ title:  "CardView with RecyclerView"
 date:   2016-08-20 17:15:19
 categories: [tutorial]
 comments: true
+image:
+  feature: cardview-snippet.png
 ---
 How to create a CardView with a RecyclerView
 <!--more-->

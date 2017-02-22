@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Firebase Logins"
-date:   2016-08-25 17:15:19
+date:   2016-08-25 
 categories: [tutorial]
 comments: true
 ---
